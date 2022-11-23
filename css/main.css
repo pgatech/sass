@@ -1,0 +1,65 @@
+body {
+  background: #14171D;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+button {
+  background: #61A5E3;
+  font-size: 1.3rem;
+  border-radius: 0.3em;
+  padding: 1em 1.5em 1em 1em;
+  display: flex;
+  cursor: pointer;
+}
+button span {
+  margin-left: 0.3em;
+}
+button:hover {
+  background: #79BEFD;
+}
+button:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  background: white;
+  border-radius: 0.3em;
+  position: absolute;
+  left: 0.1em;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(-1em);
+  transition: transform 0.5s;
+  visibility: hidden;
+}
+.dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown ul li a {
+  display: flex;
+  padding: 0.8em;
+  text-decoration: none;
+  color: black;
+}
+.dropdown ul li a span {
+  margin-left: 0.3em;
+}
+.dropdown ul li a:hover {
+  background: #E9E9E9;
+}
+
+.container {
+  position: relative;
+}
+.container:hover .dropdown {
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+}/*# sourceMappingURL=main.css.map */
